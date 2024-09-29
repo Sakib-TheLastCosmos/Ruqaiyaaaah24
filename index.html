@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruqaiyaaaah24</title>
+</head>
+<body>
+    
+    <button id="btn">Click meeeeeeeeee</button>
+
+    <a id="gift" style="display: none;" href="https://mail.google.com/mail/u/0/">Yaay! You'are right! Click here to unlock the mystery box!</a>
+
+    <p id="no-gift" style="display: none;">Wrong answer!😞 Refresh the page to try again :( </p>
+
+    <script>
+        document.querySelector('#btn').addEventListener("click", () => {
+            let ans = prompt("What's the name of my pet rat? (Na bolle khulbena lock😞)")
+
+            if (ans.toLowerCase() == "zeff") {
+                document.querySelector("#gift").style.display = "block"
+            } else {
+                document.querySelector("#no-gift").style.display = "block"
+            }
+        })
+    </script>
+</body>
+</html>
